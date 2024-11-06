@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curve Death - Find Your Fate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Curve Death - Find Your Fate</h1>
+        <form id="deathForm">
+            <div class="step" id="step1">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required>
+            </div>
+
+            <div class="step" id="step2">
+                <label for="birthplace">Birthplace:</label>
+                <input type="text" id="birthplace" placeholder="e.g., New York" required>
+            </div>
+
+            <div class="step" id="step3">
+                <label for="favoriteFood">Favorite Food:</label>
+                <input type="text" id="favoriteFood" placeholder="e.g., Pizza" required>
+            </div>
+
+            <div class="step" id="step4">
+                <label for="dadName">Dad's Name:</label>
+                <input type="text" id="dadName" required>
+            </div>
+
+            <div class="step" id="step5">
+                <label>Do you have any diseases?</label>
+                <select id="diseases">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+            </div>
+
+            <div class="step" id="step6">
+                <label>Are you an alcoholic?</label>
+                <select id="alcoholic">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+            </div>
+
+            <div class="step" id="step7">
+                <label>Gender:</label>
+                <select id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="custom">Custom</option>
+                </select>
+            </div>
+
+            <div class="step" id="step8">
+                <label>Do you have a girlfriend?</label>
+                <select id="relationship">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+            </div>
+
+            <div class="step" id="step9">
+                <label>Do you like drinking water?</label>
+                <select id="water">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="step" id="step10">
+                <label>Are you aggressive or kind?</label>
+                <select id="personality">
+                    <option value="kind">Kind</option>
+                    <option value="aggressive">Aggressive</option>
+                </select>
+            </div>
+
+            <div class="navigation-buttons">
+                <button type="button" onclick="goBack()">Back</button>
+                <button type="button" onclick="goNext()">Continue</button>
+            </div>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
